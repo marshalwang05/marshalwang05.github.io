@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<head>
+        <title>Life On Land</title>
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Baloo+Chettan' rel='stylesheet'>
+</head>
+http://thedesigninspiration.com/blog/2012/08/23/50-animals-illustrations-drew-with-simple-shapes
+<style>
+        #grad {
+          background-image: linear-gradient(180deg, #063989, #f49242);
+          margin-top: 400px;
+        }
+        .background {
+                background: #041c07;
+                position: fixed;
+        }
+        .floor {
+                position: relative;
+                margin-left: -8px;
+                margin-top: -150px;
+        }
+        .tree {
+                position: relative;
+                margin-left: -0px;
+                margin-top: -500px;
+        }
+        .treeover {
+                margin-left: -704px;
+                margin-top: -500px;
+                opacity: 0;
+        }
+        .treeover:hover{
+                opacity: 0.5;
+                transition: opacity 1s;
+        }
+        .treeover:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        @keyframes titleAppear {
+          from {opacity: 0;}
+          to {opacity: 1;}
+        }
+        .title {
+                animation-name: titleAppear;
+                animation-duration: 5s;
+                font-family: 'Amatic SC';
+                color: #c1bab4;
+                font-size: 185px;
+                text-align: center;
+                border:20px dashed #016825;
+                border-radius: 10px;
+                padding: 0px;
+                border-width: 10px;
+                width: 500px;
+                margin-left: 450px;
+                margin-top: -400px;
+        }
+        .arrow1 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #002d10 transparent transparent transparent;
+                border-width: 173.2px 100px 0 100px;
+                margin-left: 200px;
+                margin-top: -10px;
+                opacity: 1;
+        }
+        .arrow1over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 173.2px 100px 0 100px;
+                margin-left: 200px;
+                margin-top: -173.20px;
+                opacity: 0;
+        }
+        .arrow1over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow1over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow2 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #004418 transparent transparent transparent;
+                border-width: 155.88px 90px 0 90px;
+                margin-left: 152px;
+                margin-top: -100px;
+                transform: rotate(-60deg);
+        }
+        .arrow2over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 155.88px 90px 0 90px;
+                margin-left: 152px;
+                margin-top: -155.88px;
+                transform: rotate(-60deg);
+                opacity: 0;
+        }
+        .arrow2over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow2over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow3 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #016825 transparent transparent transparent;
+                border-width: 138.56px 80px 0 80px;
+                margin-left: 255px;
+                margin-top: -50px;
+                transform: rotate(-60deg);
+        }
+        .arrow3over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 138.56px 80px 0 80px;
+                margin-left: 255px;
+                margin-top: -138.56px;
+                transform: rotate(-60deg);
+                opacity: 0;
+        }
+        .arrow3over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow3over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow4 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #019635 transparent transparent transparent;
+                border-width: 121.24px 70px 0 70px;
+                margin-left: 149px;
+                margin-top: -128px;
+                transform: rotate(0deg);
+        }
+        .arrow4over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 121.24px 70px 0 70px;
+                margin-left: 149px;
+                margin-top: -121.24px;
+                transform: rotate(0deg);
+                opacity: 0;
+        }
+        .arrow4over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow4over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow5 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #01ba42 transparent transparent transparent;
+                border-width: 103.92px 60px 0 60px;
+                margin-left: 101px;
+                margin-top: -50px;
+                transform: rotate(60deg);
+        }
+        .arrow5over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 103.92px 60px 0 60px;
+                margin-left: 101px;
+                margin-top: -103.92px;
+                transform: rotate(60deg);
+        }
+        .arrow5over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow5over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow6 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #00d149 transparent transparent transparent;
+                border-width: 86.6px 50px 0 50px;
+                margin-left: 203px;
+                margin-top: -82px;
+                transform: rotate(0deg);
+        }
+        .arrow6over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 86.6px 50px 0 50px;
+                margin-left: 203px;
+                margin-top: -86.6px;
+                transform: rotate(0deg);
+        }
+        .arrow6over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow6over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow13 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #002d10 transparent transparent transparent;
+                border-width: 173.2px 100px 0 100px;
+                margin-left: 177px;
+                margin-top: 300px;
+                transform: rotate(60deg);
+                opacity: 1;
+        }
+        .arrow13over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 173.2px 100px 0 100px;
+                margin-left: 177px;
+                margin-top: -173.20px;
+                transform: rotate(60deg);
+                opacity: 0;
+        }
+        .arrow13over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow13over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow12 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #004418 transparent transparent transparent;
+                border-width: 155.88px 90px 0 90px;
+                margin-left: 136px;
+                margin-top: -242px;
+                transform: rotate(0deg);
+        }
+        .arrow12over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 155.88px 90px 0 90px;
+                margin-left: 136px;
+                margin-top: -155.88px;
+                transform: rotate(0deg);
+                opacity: 0;
+        }
+        .arrow12over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow12over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow11 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #016825 transparent transparent transparent;
+                border-width: 138.56px 80px 0 80px;
+                margin-left: 244px;
+                margin-top: -230px;
+                transform: rotate(0deg);
+        }
+        .arrow11over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 138.56px 80px 0 80px;
+                margin-left: 244px;
+                margin-top: -138.56px;
+                transform: rotate(0deg);
+                opacity: 0;
+        }
+        .arrow11over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow11over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow10 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #019635 transparent transparent transparent;
+                border-width: 121.24px 70px 0 70px;
+                margin-left: 131px;
+                margin-top: -155px;
+                transform: rotate(60deg);
+        }
+        .arrow10over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 121.24px 70px 0 70px;
+                margin-left: 131px;
+                margin-top: -121.24px;
+                transform: rotate(60deg);
+                opacity: 0;
+        }
+        .arrow10over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow10over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow9 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #01ba42 transparent transparent transparent;
+                border-width: 103.92px 60px 0 60px;
+                margin-left: 100px;
+                margin-top: -150px;
+                transform: rotate(0deg);
+        }
+        .arrow9over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 103.92px 60px 0 60px;
+                margin-left: 100px;
+                margin-top: -103.92px;
+                transform: rotate(0deg);
+        }
+        .arrow9over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow9over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow8 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #00d149 transparent transparent transparent;
+                border-width: 86.6px 50px 0 50px;
+                margin-left: 180px;
+                margin-top: -124px;
+                transform: rotate(60deg);
+        }
+        .arrow8over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 86.6px 50px 0 50px;
+                margin-left: 180px;
+                margin-top: -86.6px;
+                transform: rotate(60deg);
+        }
+        .arrow8over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow8over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        .arrow7 {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #00d149 transparent transparent transparent;
+                border-width: 50px 50px 0 50px;
+                margin-left: 215px;
+                margin-top: -160px;
+                transform: rotate(-80deg);
+        }
+        .arrow7over {
+                width: 0px;
+                height: 0px;
+                border-style: solid;
+                border-color: #e8e3e5 transparent transparent transparent;
+                border-width: 50px 50px 0 50px;
+                margin-left: 215px;
+                margin-top: -50px;
+                transform: rotate(-80deg);
+        }
+        .arrow7over:hover{
+                opacity: 0.7;
+                transition: opacity 1s;
+        }
+        .arrow7over:not(:hover){
+                opacity: 0;
+                transition: opacity 1s;
+        }
+        */
+        @keyframes beginButton {
+                0%   { left:0px; top:-790px;}
+            100% { left:-1440px; top:-790px;}
+        }
+        @keyframes beginButtonn {
+                0%   { left:0px; top:-600px;}
+            100% { left:-1440px; top:-600px;}
+        }
+        @keyframes begin {
+                0%   { left:0px; top:0px;}
+            100% { left:-1440px; top:0px;}
+        }
+        @keyframes endSlide {
+                0%   {top:-0px;}
+            100% {top:-900px;}
+        }
+        @keyframes endIcon {
+                0%   {top:-800px;}
+            100% {top:-1700px;}
+        }
+        @keyframes endTitleRW {
+                0%   {top:-1500px;}
+            100% {top:-2400px;}
+        }
+        @keyframes endTextRW {
+                0%   {top:-4900px;}
+            100% {top:-5800px;}
+        }
+        @keyframes endTitleDY {
+                0%   {top:-1750px;}
+            100% {top:-2650px;}
+        }
+        @keyframes endTextDY {
+                0%   {top:-5040px;}
+            100% {top:-5940px;}
+        }
+        @keyframes endTitleGLT {
+                0%   {top:-2130px;}
+            100% {top:-3030px;}
+        }
+        @keyframes endTextGLT {
+                0%   {top:-5230px;}
+            100% {top:-6130px;}
+        }
+        @keyframes endTitleBNT {
+                0%   {top:-2530px;}
+            100% {top:-3430px;}
+        }
+        @keyframes endTextBNT {
+                0%   {top:-5370px;}
+            100% {top:-6270px;}
+        }
+        @keyframes endTitleSL {
+                0%   {top:-2760px;}
+            100% {top:-3660px;}
+        }
+        @keyframes endTextSL {
+                0%   {top:-5530px;}
+            100% {top:-6430px;}
+        }
+        @keyframes endTitleR {
+                0%   {top:-3000px;}
+            100% {top:-3900px;}
+        }
+        @keyframes endTextR {
+                0%   {top:-5720px;}
+            100% {top:-6620px;}
+        }
+        @keyframes endTitleIL {
+                0%   {top:-3250px;}
+            100% {top:-4150px;}
+        }
+        @keyframes endTextIL {
+                0%   {top:-5950px;}
+            100% {top:-6850px;}
+        }
+        @keyframes endTitleDT {
+                0%   {top:-3500px;}
+            100% {top:-4400px;}
+        }
+        @keyframes endTextDT {
+                0%   {top:-6190px;}
+            100% {top:-7090px;}
+        }
+        @keyframes endTitleNHNW {
+                0%   {top:-3750px;}
+            100% {top:-4650px;}
+        }
+        @keyframes endTextNHNW {
+                0%   {top:-6350px;}
+            100% {top:-7250px;}
+        }
+        @keyframes endTitleWP {
+                0%   {top:-4125px;}
+            100% {top:-5025px;}
+        }
+        @keyframes endTextWP {
+                0%   {top:-6520px;}
+            100% {top:-7420px;}
+        }
+        @keyframes endTitleA {
+                0%   {top:-4375px;}
+            100% {top:-5275px;}
+        }
+        @keyframes endTextA {
+                0%   {top:-6630px;}
+            100% {top:-7530px;}
+        }
+        @keyframes endTitleBP {
+                0%   {top:-4625px;}
+            100% {top:-5525px;}
+        }
+        @keyframes endTextBP {
+                0%   {top:-6720px;}
+            100% {top:-7620px;}
+        }
+        @keyframes endTitleAA {
+                0%   {top:-4850px;}
+            100% {top:-5750px;}
+        }
+        @keyframes endTextAA {
+                0%   {top:-6870px;}
+            100% {top:-7776px;}
+        }
+
+        @keyframes beginCard0 {
+                0%   { left:0px; top:0px;}
+            100% { left:0px; top:0px;}
+        }
+        @keyframes beginCardNA {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardSA {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardAS {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardEU {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardAU {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardAF {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        @keyframes beginCardAN {
+                0%   { left:0px; top:0px;}
+            100% { left:-1435px; top:0px;}
+        }
+        .slideButton {
+                animation-name: beginButton;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideButton2 {
+                animation-name: beginButtonn;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slide {
+                animation-name: begin;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCard0 {
+                animation-name: beginCard0;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardNA {
+                animation-name: beginCardNA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardSA {
+                animation-name: beginCardSA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardAS {
+                animation-name: beginCardAS;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardEU {
+                animation-name: beginCardEU;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardAU {
+                animation-name: beginCardAU;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardAF {
+                animation-name: beginCardAF;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideCardAN {
+                animation-name: beginCardAN;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUp {
+                animation-name: endSlide;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpIcon {
+                animation-name: endIcon;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleRW {
+                animation-name: endTitleRW;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextRW {
+                animation-name: endTextRW;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleDY {
+                animation-name: endTitleDY;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextDY {
+                animation-name: endTextDY;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleGLT {
+                animation-name: endTitleGLT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextGLT {
+                animation-name: endTextGLT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleBNT {
+                animation-name: endTitleBNT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextBNT {
+                animation-name: endTextBNT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleSL {
+                animation-name: endTitleSL;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextSL {
+                animation-name: endTextSL;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleR {
+                animation-name: endTitleR;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextR {
+                animation-name: endTextR;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTitleIL {
+                animation-name: endTitleIL;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextIL {
+                animation-name: endTextIL;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleDT {
+                animation-name: endTitleDT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextDT {
+                animation-name: endTextDT;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleNHNW {
+                animation-name: endTitleNHNW;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextNHNW {
+                animation-name: endTextNHNW;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleWP {
+                animation-name: endTitleWP;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextWP {
+                animation-name: endTextWP;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleA {
+                animation-name: endTitleA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextA {
+                animation-name: endTextA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleBP {
+                animation-name: endTitleBP;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextBP {
+                animation-name: endTextBP;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+
+        .slideUpTitleAA {
+                animation-name: endTitleAA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .slideUpTextAA {
+                animation-name: endTextAA;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+        }
+        .columnButton {
+                float: left;
+                  width: 33.33%;
+                  padding: 0px;
+        }
+        .rowButton::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .columnMap {
+                float: left;
+                  width: 14.28%;
+                  padding-top: 10px;
+        }
+        .rowMap::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        #openingSlideId {
+                background: #011113;
+                margin-left: 1432px;
+                margin-top: -1300px;
+                width: 1440px;
+                height: 900px;
+                opacity: 1;
+                position: relative;
+                z-index: 1;
+        }
+        #endingSlideId {
+                background: #C4DFE3;
+                margin-left: -8px;
+                margin-top: -580px;
+                width: 1440px;
+                height: 900px;
+                position: relative;
+                z-index: 20;
+        }
+        #redWolf {
+
+        }
+        #desertYellowhead {
+
+        }
+        #goldenLionTamarin {
+
+        }
+        #brazilianNutTree {
+
+        }
+        #snowLeopard {
+
+        }
+        #rafflesia {
+
+        }
+        #iberianLynx {
+
+        }
+        #dragonTree {
+
+        }
+        #northernHairyNosedWombat {
+
+        }
+        #wollemiPine {
+
+        }
+        #addax {
+
+        }
+        #baseballPlant {
+
+        }
+        #amsterdamAlbatross {
+
+        }
+        #redWolfIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #desertYellowheadIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #goldenLionTamarinIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #brazilianNutTreeIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #snowLeopardIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #rafflesiaIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #iberianLynxIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #dragonTreeIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #northernHairyNosedWombatIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #wollemiPineIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #addaxIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #baseballPlantIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #amsterdamAlbatrossIcon {
+                z-index: 21;
+                position: relative;
+        }
+        #redWolfText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -4900px;
+                margin-left: 600px;
+        }
+        #desertYellowheadText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5040px;
+                margin-left: 600px;
+        }
+        #goldenLionTamarinText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5230px;
+                margin-left: 600px;
+        }
+        #brazilianNutTreeText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5370px;
+                margin-left: 600px;
+        }
+        #snowLeopardText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5530px;
+                margin-left: 600px;
+        }
+        #rafflesiaText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5770px;
+                margin-left: 600px;
+        }
+        #iberianLynxText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -5950px;
+                margin-left: 600px;
+        }
+        #dragonTreeText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6190px;
+                margin-left: 600px;
+        }
+        #northernHairyNosedWombatText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6350px;
+                margin-left: 600px;
+        }
+        #wollemiPineText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6520px;
+                margin-left: 600px;
+        }
+        #addaxText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6630px;
+                margin-left: 600px;
+        }
+        #baseballPlantText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6720px;
+                margin-left: 600px;
+        }
+        #amsterdamAlbatrossText {
+                z-index: 22;
+                position: relative;
+                font-family: 'Cabin'; font-size: 20px; color: #5B0526;
+                top: -6870px;
+                margin-left: 600px;
+        }
+        #redWolfTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -1500px;
+                margin-left: 600px;
+        }
+        #desertYellowheadTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -1750px;
+                margin-left: 600px;
+        }
+        #goldenLionTamarinTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -2130px;
+                margin-left: 600px;
+        }
+        #brazilianNutTreeTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -2530px;
+                margin-left: 600px;
+        }
+        #snowLeopardTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -2760px;
+                margin-left: 600px;
+        }
+        #rafflesiaTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -3000px;
+                margin-left: 600px;
+        }
+        #iberianLynxTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -3250px;
+                margin-left: 600px;
+        }
+        #dragonTreeTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -3500px;
+                margin-left: 600px;
+        }
+        #northernHairyNosedWombatTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -3750px;
+                margin-left: 600px;
+        }
+        #wollemiPineTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -4125px;
+                margin-left: 600px;
+        }
+        #addaxTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -4375px;
+                margin-left: 600px;
+        }
+        #baseballPlantTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -4625px;
+                margin-left: 600px;
+        }
+        #amsterdamAlbatrossTitle {
+                z-index: 23;
+                position: relative;
+                font-family: 'Baloo Chettan'; font-size: 100px; color: #ed1c5b;
+                top: -4850px;
+                margin-left: 600px;
+        }
+
+
+
+        #rotateButton:focus {
+            outline: none;
+        }
+        #rotateButton {
+                position: relative;
+                appearance: none;
+                background-color: #5B0526;
+                border: 4px solid #ed1c5b;
+                border-radius: 30px;
+                color: #ed1c5b;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 1615px;
+                top: -790px;
+                padding: 10px 15px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                transition: box-shadow 150ms ease-in-out;
+                z-index: 2;
+         }
+         #rotateButton:hover {
+            box-shadow: 0 0 40px 40px #D16C93 inset;
+          }
+          .animalAndPlant {
+                  margin-top: 200px;
+          }
+        .reduceSkewPlant {
+                transform: skew(-21deg);
+                display: inline-block;
+        }
+        .reduceSkewAnimal {
+                transform: skew(21deg);
+                display: inline-block;
+        }
+        #plantButton:focus {
+            outline: none;
+        }
+        #plantButton {
+                position: relative;
+                transform: skew(21deg);
+                appearance: none;
+                background-color: #5B0526;
+                border: 4px solid #ed1c5b;
+                border-radius: 30px;
+                color: #ed1c5b;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 1540px;
+                top: -790px;
+                padding: 24px 56px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                transition: box-shadow 150ms ease-in-out;
+                z-index: 2;
+         }
+         #plantButton:hover {
+            box-shadow: 0 0 40px 40px #D16C93 inset;
+          }
+        #animalButton:focus {
+            outline: none;
+        }
+        #animalButton {
+                position: relative;
+                transform: skew(-21deg);
+                appearance: none;
+                background-color: #5B0526;
+                border: 4px solid #ed1c5b;
+                border-radius: 30px;
+                color: #ed1c5b;
+                cursor: pointer;
+                font-size: 20px;
+                margin-left: 1580px;
+                top: -790px;
+                padding: 24px 56px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                transition: box-shadow 150ms ease-in-out;
+                z-index: 2;
+         }
+         #animalButton:hover {
+            box-shadow: 0 0 40px 40px #D16C93 inset;
+          }
+        .startButton:focus {
+            outline: none;
+        }
+        .startButton {
+                position: absolute;
+                animation-name: titleAppear;
+                animation-duration: 5s;
+                box-sizing: border-box;
+                appearance: none;
+                background-color: transparent;
+                border: 4px solid #c1bab4;
+                border-radius: 30px;
+                color: #c1bab4;
+                cursor: pointer;
+                display: flex;
+                align-self: center;
+                font-size: 20px;
+                font-weight: 400;
+        line-height: 1;
+                margin-left: 630px;
+                margin-top: -500px;
+                padding: 24px 56px;
+                text-decoration: none;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                transition: box-shadow 300ms ease-in-out;
+         }
+         .startButton:hover {
+            box-shadow: 0 0 40px 40px rgba(219, 144, 81, 0.3) inset;
+          }
+          .slider {
+                animation-name: begin;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in-out;
+         }
+
+          @keyframes rotate {
+            0% {background-position: 0 0; top:0px; left: -1440px;}
+            100% {background-position: 1050px 0; top:0px; left: -1440px}
+          }
+          .rotate {
+                animation-name: rotate;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+          }
+
+          #earth {
+            position: relative;
+                z-index: 2;
+            width: 500px;
+            height: 500px;
+            margin-left: 1873px;
+                margin-top: -600px;
+            transition: transform 200ms linear;
+            animation: rotate 4s linear infinite;
+            color: #000;
+            border-radius: 50%;
+            background: url(Images/WorldMap.png) 0 0 repeat / 1050px;
+            box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+                opacity: 1;
+
+            transform-style: preserve-3d;
+          }
+          #earth:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            border-radius: 50%;
+            box-shadow: -80px 15px 80px 10px rgba(0,0,0,.9) inset;
+          }
+          #earth:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            opacity: .2;
+            border-radius: 50%;
+            background: radial-gradient(circle at 100px 100px, #fff, #000);
+
+          }
+        @keyframes Flipp {
+          from {transform: rotateY(0deg); left: -1435px;}
+          to {transform: rotateY(180deg); left: -1435px;}
+        }
+        .Flip {
+                animation-name: Flipp;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+        }
+        @keyframes Backflipp {
+          from {transform: rotateY(180deg); left: -1435px;}
+          to {transform: rotateY(0deg); left: -1435px;}
+        }
+        .Backflip {
+                animation-name: Backflipp;
+                animation-duration: 0.8s;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+        }
+          #CountryText {
+                appearance: none;
+                background-color: transparent;
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 18px;
+                text-decoration: none;
+                text-align: center;
+          }
+          #CountryText:focus {
+                  outline: none;
+          }
+          #flipBoxNorthAmerica {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerNorthAmerica {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+                transform-style: preserve-3d;
+          }
+          #flipBoxNorthAmerica:hover #flipBoxInnerNorthAmerica {
+            transform: rotateY(180deg);
+          }
+          #flipBoxNorthAmerica-front, #flipBoxNorthAmerica-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxNorthAmerica-front {
+            background-color: #5B0526;
+            color: white;
+          }
+          #flipBoxNorthAmerica-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxSouthAmerica {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerSouthAmerica {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxSouthAmerica:hover #flipBoxInnerSouthAmerica {
+            transform: rotateY(180deg);
+          }
+          #flipBoxSouthAmerica-front, #flipBoxSouthAmerica-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxSouthAmerica-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxSouthAmerica-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxAsia {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerAsia {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxAsia:hover #flipBoxInnerAsia {
+            transform: rotateY(180deg);
+          }
+          #flipBoxAsia-front, #flipBoxAsia-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxAsia-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxAsia-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxEurope {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerEurope {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxEurope:hover #flipBoxInnerEurope {
+            transform: rotateY(180deg);
+          }
+          #flipBoxEurope-front, #flipBoxEurope-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxEurope-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxEurope-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxAustralia {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerAustralia {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxAustralia:hover #flipBoxInnerAustralia {
+            transform: rotateY(180deg);
+          }
+          #flipBoxAustralia-front, #flipBoxAustralia-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxAustralia-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxAustralia-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxAfrica {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerAfrica {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxAfrica:hover #flipBoxInnerAfrica {
+            transform: rotateY(180deg);
+          }
+          #flipBoxAfrica-front, #flipBoxAfrica-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxAfrica-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxAfrica-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          #flipBoxAntarctica {
+                  position: relative;
+            background-color: transparent;
+            width: 200px;
+            height: 200px;
+            perspective:1500px;
+                margin-left: 1440px;
+                margin-top: -1300px;
+                z-index: 1;
+          }
+          #flipBoxInnerAntarctica {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+          }
+          #flipBoxAntarctica:hover #flipBoxInnerAntarctica {
+            transform: rotateY(180deg);
+          }
+          #flipBoxAntarctica-front, #flipBoxAntarctica-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          #flipBoxAntarctica-front {
+            background-color: #5B0526;
+            color: #ed1c5b;
+          }
+          #flipBoxAntarctica-back {
+            background-color: #39EB5C;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          .mapText {
+                  font-family: 'Audiowide';
+                  margin-top: 80px;
+          }
+          #donePlus {
+            position: relative;
+                font-family: 'Baloo Chettan'; font-size: 10px; color: #ed1c5b;
+                margin-left: 2750px;
+                top: -600px;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            color: #1a1a1a;
+            background: #ed1c5b;
+            border-radius: 50%;
+            border: none;
+            transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1);
+            transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+            transition: box-shadow 400ms cubic-bezier(0.2, 0, 0.7, 1), transform 200ms cubic-bezier(0.2, 0, 0.7, 1);
+          }
+          #donePlus:after {
+            content: "↗︎";
+            font-size: 30px;
+            line-height: 1.1;
+          }
+          #donePlus:hover {
+            transform: rotate(45deg);
+            box-shadow: 0 0 1px 15px rgba(138, 59, 88, 0.4), 0 0 1px 30px rgba(138, 59, 88, 0.1), 0 0 1px 45px rgba(138, 59, 88, 0.1);
+          }
+          #donePlus:focus {
+                  outline: none;
+                  background-color: #39EB5C;
+          }
+
+</style>
+<script>
+        var plant = new Boolean(false);
+        var animal = new Boolean(false);
+        var rotate1 = new Boolean(false);
+
+        var northAmerica = new Boolean(false);
+        var southAmerica = new Boolean(false);
+        var asia = new Boolean(false);
+        var europe = new Boolean(false);
+        var australia = new Boolean(false);
+        var africa = new Boolean(false);
+        var antarctica = new Boolean(false);
+        function changeBackground(){
+                document.getElementById('plantButton').classList.add('slideButton');
+                document.getElementById('rotateButton').classList.add('slideButton');
+            document.getElementById('openingSlideId').classList.add('slide');
+                document.getElementById('earth').classList.add('slider');
+                document.getElementById('animalButton').classList.add('slideButton');
+
+                document.getElementById('flipBoxInnerNorthAmerica').classList.add('slideCardNA');
+
+                document.getElementById('flipBoxInnerSouthAmerica').classList.add('slideCardSA');
+
+                document.getElementById('flipBoxInnerAsia').classList.add('slideCardAS');
+
+                document.getElementById('flipBoxInnerEurope').classList.add('slideCardEU');
+
+                document.getElementById('flipBoxInnerAustralia').classList.add('slideCardAU');
+
+                document.getElementById('flipBoxInnerAfrica').classList.add('slideCardAF');
+
+                document.getElementById('flipBoxInnerAntarctica').classList.add('slideCardAN');
+
+                document.getElementById('donePlus').classList.add('slideButton2');
+
+        }
+        function plantPlus(){
+                if (plant==false){
+                        document.getElementById('plantButton').style.border = "4px solid #39EB5C"
+                        document.getElementById('plantButton').style.color = "#39EB5C"
+                        document.getElementById('animalButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('animalButton').style.color = "#ed1c5b"
+                        plant = true;
+                        animal = false;
+                }else if (plant==true){
+                        document.getElementById('plantButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('plantButton').style.color = "#ed1c5b"
+                        document.getElementById('animalButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('animalButton').style.color = "#ed1c5b"
+                        plant = false;
+                        animal = false;
+                }
+        }
+        function animalPlus(){
+                if (animal==false){
+                        document.getElementById('animalButton').style.border = "4px solid #39EB5C"
+                        document.getElementById('animalButton').style.color = "#39EB5C"
+                        document.getElementById('plantButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('plantButton').style.color = "#ed1c5b"
+                        plant = false;
+                        animal = true;
+                }else if (animal==true){
+                        document.getElementById('animalButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('animalButton').style.color = "#ed1c5b"
+                        document.getElementById('plantButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('plantButton').style.color = "#ed1c5b"
+                        plant = false;
+                        animal = false;
+                }
+        }
+        function rotateEarth(){
+                if (rotate1==false){
+                        document.getElementById('rotateButton').style.border = "4px solid #39EB5C"
+                        document.getElementById('rotateButton').style.color = "#39EB5C"
+                        document.getElementById('earth').classList.add('rotate');
+                        document.getElementById('earth').style.marginLeft = "1873px"
+                        document.getElementById('earth').classList.remove('slider');
+                        rotate1 = true;
+                }else if (rotate1==true){
+                        document.getElementById('rotateButton').style.border = "4px solid #ed1c5b"
+                        document.getElementById('rotateButton').style.color = "#ed1c5b"
+                        document.getElementById('earth').classList.remove('rotate');
+                        document.getElementById('earth').style.marginLeft = "433px"
+                        rotate1 = false;
+                }
+        }
+        function northAmerica1(){
+                if (northAmerica==false){
+                        document.getElementById('flipBoxNorthAmerica').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerNorthAmerica').classList.add('Flip');
+                        document.getElementById('flipBoxNorthAmerica-front').classList.add('Flipp');
+                        document.getElementById('flipBoxNorthAmerica-back').classList.add('Flipp');
+                        northAmerica=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+        }
+        function southAmerica1(){
+                if (southAmerica==false){
+                        document.getElementById('flipBoxSouthAmerica').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerSouthAmerica').classList.add('Flip');
+                        document.getElementById('flipBoxSouthAmerica-front').classList.add('Flipp');
+                        document.getElementById('flipBoxSouthAmerica-back').classList.add('Flipp');
+                        southAmerica=true;
+                        if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNA');
+                                northAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+
+        }
+        function asia1(){
+                if (asia==false){
+                        document.getElementById('flipBoxAsia').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerAsia').classList.add('Flip');
+                        document.getElementById('flipBoxAsia-front').classList.add('Flipp');
+                        document.getElementById('flipBoxAsia-back').classList.add('Flipp');
+                        asia=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNA');
+                                northAmerica=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+        }
+        function europe1(){
+                if (europe==false){
+                        document.getElementById('flipBoxEurope').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerEurope').classList.add('Flip');
+                        document.getElementById('flipBoxEurope-front').classList.add('Flipp');
+                        document.getElementById('flipBoxEurope-back').classList.add('Flipp');
+                        europe=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNA');
+                                northAmerica=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+        }
+        function australia1(){
+                if (australia==false){
+                        document.getElementById('flipBoxAustralia').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerAustralia').classList.add('Flip');
+                        document.getElementById('flipBoxAustralia-front').classList.add('Flipp');
+                        document.getElementById('flipBoxAustralia-back').classList.add('Flipp');
+                        australia=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNA');
+                                northAmerica=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+        }
+        function africa1(){
+                if (africa==false){
+                        document.getElementById('flipBoxAfrica').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerAfrica').classList.add('Flip');
+                        document.getElementById('flipBoxAfrica-front').classList.add('Flipp');
+                        document.getElementById('flipBoxAfrica-back').classList.add('Flipp');
+                        africa=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNW');
+                                northAmerica=false;
+                        } else if (antarctica==true){
+                                document.getElementById('flipBoxInnerAntarctica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAntarctica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAntarctica').classList.remove('slideCardAN');
+                                antarctica=false;
+                        }
+                }
+        }
+        function antarctica1(){
+                if (antarctica==false){
+                        document.getElementById('flipBoxAntarctica').classList.add('Flipp');
+                        document.getElementById('flipBoxInnerAntarctica').classList.add('Flip');
+                        document.getElementById('flipBoxAntarctica-front').classList.add('Flipp');
+                        document.getElementById('flipBoxAntarctica-back').classList.add('Flipp');
+                        antarctica=true;
+                        if (southAmerica==true){
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerSouthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerSouthAmerica').classList.remove('slideCardSA');
+                                southAmerica=false;
+                        } else if (asia==true){
+                                document.getElementById('flipBoxInnerAsia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAsia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAsia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAsia').classList.remove('slideCardAS');
+                                asia=false;
+                        } else if (europe==true){
+                                document.getElementById('flipBoxInnerEurope').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerEurope').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerEurope').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerEurope').classList.remove('slideCardEU');
+                                europe=false;
+                        } else if (australia==true){
+                                document.getElementById('flipBoxInnerAustralia').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAustralia').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAustralia').classList.remove('slideCardAU');
+                                australia=false;
+                        } else if (africa==true){
+                                document.getElementById('flipBoxInnerAfrica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerAfrica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerAfrica').classList.remove('slideCardAF');
+                                africa=false;
+                        } else if (northAmerica==true){
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.add('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Flip');
+                                document.getElementById('flipBoxInnerNorthAmerica').style.left = "-1435px"
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('Backflip');
+                                document.getElementById('flipBoxInnerNorthAmerica').classList.remove('slideCardNA');
+                                northAmerica=false;
+                        }
+                }
+        }
+        function end() {
+                if (animal == true || plant == true){
+                        document.getElementById('endingSlideId').classList.add('slideUp');
+                }
+
+                if (northAmerica==true){
+                        if (animal==true){
+                                document.getElementById('redWolfIcon').classList.add('slideUpIcon');
+                                document.getElementById('redWolfTitle').classList.add('slideUpTitleRW');
+                                document.getElementById('redWolfText').classList.add('slideUpTextRW');
+                        } else if (plant==true){
+                                document.getElementById('desertYellowheadIcon').classList.add('slideUpIcon');
+                                document.getElementById('desertYellowheadTitle').classList.add('slideUpTitleDY');
+                                document.getElementById('desertYellowheadText').classList.add('slideUpTextDY');
+                        }
+                }else if (southAmerica==true){
+                        if (animal==true){
+                                document.getElementById('goldenLionTamarinIcon').classList.add('slideUpIcon');
+                                document.getElementById('goldenLionTamarinTitle').classList.add('slideUpTitleGLT');
+                                document.getElementById('goldenLionTamarinText').classList.add('slideUpTextGLT');
+                        } else if (plant==true){
+                                document.getElementById('brazilianNutTreeIcon').classList.add('slideUpIcon');
+                                document.getElementById('brazilianNutTreeTitle').classList.add('slideUpTitleBNT');
+                                document.getElementById('brazilianNutTreeText').classList.add('slideUpTextBNT');
+                        }
+                }else if (asia==true){
+                        if (animal==true){
+                                document.getElementById('snowLeopardIcon').classList.add('slideUpIcon');
+                                document.getElementById('snowLeopardTitle').classList.add('slideUpTitleSL');
+                                document.getElementById('snowLeopardText').classList.add('slideUpTextSL');
+                        } else if (plant==true){
+                                document.getElementById('rafflesiaIcon').classList.add('slideUpIcon');
+                                document.getElementById('rafflesiaTitle').classList.add('slideUpTitleR');
+                                document.getElementById('rafflesiaText').classList.add('slideUpTextR');
+                        }
+                }else if (europe==true){
+                        if (animal==true){
+                                document.getElementById('iberianLynxIcon').classList.add('slideUpIcon');
+                                document.getElementById('iberianLynxTitle').classList.add('slideUpTitleIL');
+                                document.getElementById('iberianLynxText').classList.add('slideUpTextIL');
+                        } else if (plant==true){
+                                document.getElementById('dragonTreeIcon').classList.add('slideUpIcon');
+                                document.getElementById('dragonTreeTitle').classList.add('slideUpTitleDT');
+                                document.getElementById('dragonTreeText').classList.add('slideUpTextDT');
+                        }
+                }else if (australia==true){
+                        if (animal==true){
+                                document.getElementById('northernHairyNosedWombatIcon').classList.add('slideUpIcon');
+                                document.getElementById('northernHairyNosedWombatTitle').classList.add('slideUpTitleNHNW');
+                                document.getElementById('northernHairyNosedWombatText').classList.add('slideUpTextNHNW');
+                        } else if (plant==true){
+                                document.getElementById('wollemiPineIcon').classList.add('slideUpIcon');
+                                document.getElementById('wollemiPineTitle').classList.add('slideUpTitleWP');
+                                document.getElementById('wollemiPineText').classList.add('slideUpTextWP');
+                        }
+                }else if (africa==true){
+                        if (animal==true){
+                                document.getElementById('addaxIcon').classList.add('slideUpIcon');
+                                document.getElementById('addaxTitle').classList.add('slideUpTitleA');
+                                document.getElementById('addaxText').classList.add('slideUpTextA');
+                        } else if (plant==true){
+                                document.getElementById('baseballPlantIcon').classList.add('slideUpIcon');
+                                document.getElementById('baseballPlantTitle').classList.add('slideUpTitleBP');
+                                document.getElementById('baseballPlantText').classList.add('slideUpTextBP');
+                        }
+                }else if (antarctica==true){
+                        if (animal==true){
+                                document.getElementById('amsterdamAlbatrossIcon').classList.add('slideUpIcon');
+                                document.getElementById('amsterdamAlbatrossTitle').classList.add('slideUpTitleAA');
+                                document.getElementById('amsterdamAlbatrossText').classList.add('slideUpTextAA');
+                        } else if (plant==true){
+
+                        }
+                }
+        }
+
+
+</script>       
+<body id="grad">
+        <article>
+                <div class="arrow1"></div>
+                <div class="arrow1over"></div>
+                <div class="arrow2"></div>
+                <div class="arrow2over"></div>
+                <div class="arrow3"></div>
+                <div class="arrow3over"></div>
+                <div class="arrow4"></div>
+                <div class="arrow4over"></div>
+                <div class="arrow5"></div>
+                <div class="arrow5over"></div>
+                <div class="arrow6"></div>
+                <div class="arrow6over"></div>
+                <div class="arrow13"></div>
+                <div class="arrow13over"></div>
+                <div class="arrow12"></div>
+                <div class="arrow12over"></div>
+                <div class="arrow11"></div>
+                <div class="arrow11over"></div>
+                <div class="arrow10"></div>
+                <div class="arrow10over"></div>
+                <div class="arrow9"></div>
+                <div class="arrow9over"></div>
+                <div class="arrow8"></div>
+                <div class="arrow8over"></div>
+                <div class="arrow7"></div>
+                <div class="arrow7over"></div>
+
+                <p class="title">Life On Land</p>
+                <img src="Images/Floor.png" alt="Floor" width = 1440 height = 300 class="floor">
+                <img src="Images/Tree.png" alt="Tree" width = 700 height = 700 class="tree">
+                <img src="Images/Tree2.png" alt="Tree" width = 700 height = 700 class="treeover">
+                <button type="button" class="startButton" onclick="changeBackground()">Begin</button>
+        </article>
+        <article>
+                <section>
+                        <div class="rowButton">
+                          <div class="columnButton">
+                                  <button type="button" id="plantButton" class = "animalAndPlant" onclick="plantPlus()"><span class="reduceSkewPlant">Plants</span></button>
+                          </div>
+                          <div class="columnButton">
+                                  <button type="button" id="rotateButton" onclick="rotateEarth()">↺</button>
+                          </div>
+                          <div class="columnButton">
+                                  <button type="button" id="animalButton" class = "animalAndPlant" onclick="animalPlus()"><span class="reduceSkewAnimal">Animal</span></button>
+                          </div>
+                        </div>
+                        <div id="openingSlideId"></div>
+                        <div class="slider">
+                                <div id="earth"></div>
+                        </div>
+                </section>
+                <section>
+                        <div class="rowMap">
+                          <div class="columnMap">
+                                <div id="flipBoxNorthAmerica">
+                                  <div id="flipBoxInnerNorthAmerica">
+                                    <div id="flipBoxNorthAmerica-front">
+                                          <button type="button" id="CountryText" class = "mapText" onclick="northAmerica1()">North America</button>
+                                    </div>
+                                    <div id="flipBoxNorthAmerica-back">
+                                                <img src="Images/NorthAmerica.png" alt="NorthAmerica" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                        <div id="flipBoxSouthAmerica">
+                                          <div id="flipBoxInnerSouthAmerica">
+                                            <div id="flipBoxSouthAmerica-front">
+                                              <button type="button" id="CountryText" class = "mapText" onclick="southAmerica1()">South America</button>
+                                            </div>
+                                            <div id="flipBoxSouthAmerica-back">
+                                              <img src="Images/SouthAmerica.png" alt="SouthAmerica" width = 200 height = 200 margin-top=-600px>
+                                            </div>
+                                        </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                <div id="flipBoxAsia">
+                                  <div id="flipBoxInnerAsia">
+                                    <div id="flipBoxAsia-front">
+                                      <button type="button" id="CountryText" class = "mapText" onclick="asia1()">Asia</button>
+                                    </div>
+                                    <div id="flipBoxAsia-back">
+                                      <img src="Images/Asia.png" alt="Asia" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                <div id="flipBoxEurope">
+                                  <div id="flipBoxInnerEurope">
+                                    <div id="flipBoxEurope-front">
+                                      <button type="button" id="CountryText" class = "mapText" onclick="europe1()">Europe</button>
+                                    </div>
+                                    <div id="flipBoxEurope-back">
+                                      <img src="Images/Europe.png" alt="Europe" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                        </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                <div id="flipBoxAustralia">
+                                  <div id="flipBoxInnerAustralia">
+                                    <div id="flipBoxAustralia-front">
+                                      <button type="button" id="CountryText" class = "mapText" onclick="australia1()">Australia</button>
+                                    </div>
+                                    <div id="flipBoxAustralia-back">
+                                      <img src="Images/Australia.png" alt="Australia" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                        </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                <div id="flipBoxAfrica">
+                                  <div id="flipBoxInnerAfrica">
+                                    <div id="flipBoxAfrica-front">
+                                      <button type="button" id="CountryText" class = "mapText" onclick="africa1()">Africa</button>
+                                    </div>
+                                    <div id="flipBoxAfrica-back">
+                                      <img src="Images/Africa.png" alt="Africa" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                        </div>
+                                </div>
+                          </div>
+                          <div class="columnMap">
+                                <div id="flipBoxAntarctica">
+                                  <div id="flipBoxInnerAntarctica">
+                                    <div id="flipBoxAntarctica-front">
+                                      <button type="button" id="CountryText" class = "mapText" onclick="antarctica1()">Antarctica</button>
+                                    </div>
+                                    <div id="flipBoxAntarctica-back">
+                                      <img src="Images/Antarctica.png" alt="Antarctica" width = 200 height = 200 margin-top=-600px>
+                                    </div>
+                                        </div>
+                                </div>
+                          </div>
+                        </div>
+                </section>
+                <section>
+                        <button id="donePlus" onclick="end()"></button>
+                </section>
+        </article>
+        <article>
+                <section>
+                        <div id="endingSlideId"></div>
+                        <img src="Images/RedWolf.png" id="redWolfIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: 0px;">
+                        <img src="Images/DesertYellowhead.png" id="desertYellowheadIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/GoldenLionTamarin.png" id="goldenLionTamarinIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/BrazilianNutTree.png" id="brazilianNutTreeIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/SnowLeopard.png" id="snowLeopardIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/Rafflesia.png" id="rafflesiaIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/IberianLynx.png" id="iberianLynxIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/DragonTree.png" id="dragonTreeIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/NorthernHairyNosedWombat.png" id="northernHairyNosedWombatIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/WollemiPine.png" id="wollemiPineIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/Addax.png" id="addaxIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/BaseballPlant.png" id="baseballPlantIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+                        <img src="Images/AmsterdamAlbatross.png" id="amsterdamAlbatrossIcon" alt="" width = 552 height = 552 style="top:-800px; margin-left: -552px;">
+
+                        <p id=redWolfTitle>Red Wolf</p>
+                        <p id=desertYellowheadTitle>Desert Yellowhead</p>
+                        <p id=goldenLionTamarinTitle>Golden Lion Tamarin</p>
+                        <p id=brazilianNutTreeTitle>Brazilian Nut Tree</p>
+                        <p id=snowLeopardTitle>Snow Leopard</p>
+                        <p id=rafflesiaTitle>Rafflesia</p>
+                        <p id=iberianLynxTitle>Iberian Lynx</p>
+                        <p id=dragonTreeTitle>Dragon Tree</p>
+                        <p id=northernHairyNosedWombatTitle>Northern Hairy Nosed Wombat</p>
+                        <p id=wollemiPineTitle>Wollemi Pine</p>
+                        <p id=addaxTitle>Addax</p>
+                        <p id=baseballPlantTitle>Baseball Plant</p>
+                        <p id=amsterdamAlbatrossTitle>Amsterdam Albatross</p>
+
+                        <p id=redWolfText>The red wolf is the miniature cousin of the gray wolf. They has been hunted to the brink of extinction in the U.S. There have been recovery plans, but they were insufficient and their population continues to decline, and they face the brink of extinction. You can help by taking part in wolf awareness week, starting October 21st, or donate to the link below.
+- https://defenders.org/red-wolf/basic-facts </p>
+                        <p id=desertYellowheadText>They are tapped root, perennial herb. Its status is currently threatened, and its entire range includes an area of 50 acres in Wyoming. It faces extinction from the destruction or obstruction or their habitat from recreation, oil and gas extraction, mining, and even being trampled by livestock. To help them, contact the US fish and wildlife service, who are currently protecting the species.
+- https://www.federalregister.gov/documents/2002/03/14/02-6134/endangered-and-threatened-wildlife-and-plants-listing-the-desert-yellowhead-as-threatened
+- https://www.fws.gov/mountain-prairie/pressrel/02-05.htm</p>
+                        <p id=goldenLionTamarinText>Its threats are largely fragmentation, the loss of habitat due to deforestation, mostly because of the production of wood and settlement. They were previously used in a pet trade and captured for zoos. There are currently estimated 1000 alive, and habitat restoration projects have been introduced, so to help the golden lion tamarin, you need to support habitat restoration projects in South America.
+- http://www.torontozoo.com/ExploretheZoo/AnimalDetails.asp?pg=399</p>
+                        <p id=brazilianNutTreeText>Classified as vulnerable, the Brazilian nut tree also faces the threat of deforestation. It’s nuts are often taken and sold, leaving none behind to regrow the trees for the next generation. In 2001, the Brazilian nut program was founded and its aim was to increase the income from Brazilian nuts in a way that maintains and stabilizes forests. To support the protection of the Brazilian nut trees, support the program.
+- https://www.wwf.org.br/informacoes/english/?26235/The-Brazil-nut-tree-grandiose-and-threatened#</p>
+                        <p id=snowLeopardText>Unlike tigers, they are offered little protection. Their main source of food are taken away when farmers use them as livestock. They are hunted for their fur and bones as use for traditional Chinese medicine and supplements harder to find tiger organs. They are also killed because of their dependence on the livestock. They have resulted to livestock because the animal which they normally hunt, the Argali sheep, are also being hunted, making them harder to find, resulting to killing livestock as a means for survival. As for how you, the reader can help, you can donate to the Snow Leopard SOS fund, as seen in the second link below
+- https://www.worldwildlife.org/species/snow-leopard
+- http://wwf.panda.org/knowledge_hub/endangered_species/snow_leopard/snow_leopard_sos.cfm</p>
+                        <p id=rafflesiaText>Holding the title of the largest flower on earth, the Rafflesia is a group of parasitic flowers. It attracts flies and other insects with a smell of rotten meat and is dubbed the “corpse flower.” All known species are endangered and are threatened to extinction by logging, habitat loss or even plant collection. To help you can donate to the WWF foundation. Some ways are to stop habitat loss in the area, or even use them as a tourist attraction and use the money earned to help the Rafflesia.
+- http://wwf.panda.org/knowledge_hub/teacher_resources/best_place_species/current_top_10/rafflesia.cfm</p>
+                        <p id=iberianLynxText>With a conservation status of critically endangered and its population decreasing, the Iberian lynx is currently the most endangered feline species. Though their main goal is to increase the lynx population, they may have to save rabbits, as their population faces epidemics and is decreasing over the years, and is also the Iberian lynxes main source of food. As construction of roads continues, a form of habitat loss, it’s splitting up the Iberian lynx’s area, causing frequent car accidents, and they even face illegal hunting. There has been attempted conservation of these precious felines for over 10 years, and you can help by supporting the captive breeding program or sponsorship to the Large Carnivore Initiative for Europe, LCIE for short.
+- http://wwf.panda.org/our_work/wildlife/profiles/mammals/iberian_lynx/</p>
+                        <p id=dragonTreeText>The dragon tree used to dye their clothes with the red dye generated from the tree and it has cured many diseases. It is even classified as the worlds most endangered tree. Though tourism could generate valuable money to support the tree, it is hurt more than helped. You can help by supporting the IUCN (International Union for Conservation of Nature), who have classified it as vulnerable.
+- https://www.mnn.com/earth-matters/wilderness-resources/blogs/6-worlds-most-endangered-trees-also-look-strangest</p>
+                        <p id=northernHairyNosedWombatText>With a status of critically endangered, the largest wombat species is threatened by its restricted area and population size, and also diseases such as toxoplasmosis. Since 1992, recovery plans have continued and in 2008, a company Glencore would sponsor a reintroduction program for the wombat. To help the wombat, contact Glencore and see what you can do.
+- https://www.australiangeographic.com.au/blogs/australian-endangered-species/2015/09/northern-hairy-nosed-wombat/</p>
+                        <p id=wollemiPineText>The Wollemi pine is a tree, classified as endangered, and with unusual bubbly bark. Human activity is currently the greatest threat, as people can introduce disease or weeds to the trees.
+- https://www.environment.gov.au/system/files/resources/d947f8ec-dd8b-4e7f-bd3b-8246e0702547/files/plants.pdf</p>
+                        <p id=addaxText>Also known as the white antelope, lives in deserts and are nocturnal nomad creatures, often led by the males of the pack. Due to hunting and drought the Africa, their numbers are dropping and are currently little over 200.
+- https://answersafrica.com/most-endangered-animals-in-africa.html</p>
+                        <p id=baseballPlantText>This house plant is nearly extinct because of habitat destruction, like many other plants. It has poisonous sap and makes a great ornament for gardens. In order to preserve this plant, you can simply reproduce and replace them in your personal garden.
+- https://www.momtastic.com/webecoist/2008/11/03/strange-rare-bizarre-endangered-flowers-plants-and-trees/</p>
+                        <p id=amsterdamAlbatrossText>A subspecies of the wandering albatross, the Amsterdam albatross is critically endangered and is mostly threatened from other animals. The sudden increase of cattle from a mere 5 to a near 2000, caused the destruction and trampling of the albatrosses nests and along with it, dogs, cats and even pigs wreaked havoc on their eggs. Fences have been made to separate their nesting areas from the other animas, and many of the animals have been taken off the island.
+- http://www.ourendangeredworld.com/species/birds-bats/amsterdam-albatross/</p>
+
+                </section>
+        </article>
+</body>
+
+</html>
