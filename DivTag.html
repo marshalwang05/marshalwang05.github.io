@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+
+
+	body {
+
+
+	}
+
+	div {
+
+
+	}
+
+	p {
+		margin-block-start: 0em;
+   		margin-block-end: 0em;
+   		font-size: 100px;
+	}
+
+	.info {
+		width: 50%;
+		height: 50%;
+	}
+
+	#content {
+		width: 100%;
+		height: 1000px;
+	}
+	#info1 {
+		
+		background-color: red;
+	}
+
+	#info2 {
+		
+		background-color: blue;
+	}
+
+	#info3 {
+	
+		background-color: yellow;
+	}
+
+	#info4 {
+		
+		background-color: green;
+	}
+
+	#info4 > p {
+		font-size: 50px;
+	}
+</style>
+
+</head>
+<body>
+
+
+	<div id = content>
+		
+		<div id = "info1" class = "info">
+			<p> DIV1 </p>
+		</div>
+
+		<div id = "info2" class = "info">
+			<p> DIV2 </p>
+		</div>
+
+		<div id = "info3" class = "info">
+			<p> DIV3 </p>
+		</div>
+
+		<div id = "info4" class = "info">
+			<p> DIV4 </p>
+			<p> DIV4 </p>
+		</div>
+
+	</div>
+
+	<script>
+		//This will always run once!
+		console.log("Line 1");
+		console.log("Line 2");
+		console.log(document.getElementById("info1"));
+
+
+	</script>
+</body>
+</html>
