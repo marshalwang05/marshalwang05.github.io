@@ -350,30 +350,6 @@ img {
 } 
 
 
-.block{
-  border: none;
-  background-color: black;
-  padding: 14px 28px;
-  font-size: 30px;
-  cursor: pointer;
-  display: inline-block;
-  color: orange;
-  width: 100%;
-  text-align: center;
-  display: block;
-  color: white;
-  font-style: 'Lato';
-}
-
-.block:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.block:vlink{
-  color: blue;
-}
-
 #readMoreBtn{
   text-align: center;
 }
