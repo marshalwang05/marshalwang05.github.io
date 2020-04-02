@@ -299,8 +299,8 @@ img {
 }
 
 
-.parallax1{
-    background-image: url("https://www.undp.org/content/dam/undp/sdg/covers/sdg-cover-01.jpg");
+.parallax2{
+    background-image: url("s3.amazonaws.com/vuweb-s3-vuwebstaticassets-1i6c9zhn31ti6/vu-wp0/wp-content/uploads/sites/59/2019/03/27130300/chain-2-link-300x209.jpg");
     height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -400,7 +400,7 @@ img {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #330000;
+  background-color: #000000;
 }
 
 

@@ -28,7 +28,7 @@ var questions = [
         correct : "B"
     },{
         question : "Where does poverty not exist?",
-        imgSrc : "img/js.png",
+        imgSrc : "https://thumbs.dreamstime.com/b/stop-poverty-sign-close-up-83359838.jpg",
         choiceA : "Canada",
         choiceB : "USA",
         choiceC : "Nowhere",

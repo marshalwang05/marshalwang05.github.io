@@ -13,18 +13,18 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 var questions = [
     {
-        question : "What is the world poverty line?",
+        question : "Which one is NOT an example of a Sustainable City",
         imgSrc : "PovertyMap.jpg",
-        choiceA : "$1.90",
-        choiceB : "$1.80",
-        choiceC : "$1.70",
+        choiceA : "Salzburg, Austria",
+        choiceB : "San Francisco, USA",
+        choiceC : "Copenhagen, Denmark",
         correct : "A"
     },{
-        question : "Which country has the most people in poverty?",
+        question : "Which of the following is something found in sustainable cities",
         imgSrc : "PiChart.jpg",
-        choiceA : "Cambodia",
-        choiceB : "Nigeria",
-        choiceC : "Philippines",
+        choiceA : "Lower poverty rate",
+        choiceB : "Decreased emissions produced",
+        choiceC : "",
         correct : "B"
     },{
         question : "?",
@@ -269,15 +269,13 @@ function showSlides(n) {
 
 
 
-
-//graph
-
-data = [263385693.7, 267788016.1, 271478121.6, 285364129.2, 301898677.4, 315845686.4, 330188763.1, 344365476, 350197458, 352420229.7, 373303791.9, 392455642.3, 390919511.8, 402882325.7, 409037825.2, 417306579.9, 427511463.8, 437859803.3]
+//https://www.sdg.org/datasets/ed6ee35ad584405b8f3ef2abc22f6948_0
+data = [369.7, 367.1, 361.6, 320.2, 300.4, 290.4, 280.1, 276, 255, 247.7, 210.9, 190.3, 185.8, 178.7, 160.2, 161.9, 158.8, 153.3]
 
 var canvas = document.getElementById("ctx");
 var ctx = canvas.getContext("2d");
 for(i=200; i<460; i=i+50){
-ctx.font = "15px Roboto";
+ctx.font = "15px Antic Slab";
 ctx.fillStyle = "#ffffff";
 ctx.fillText(i, 33, 610-1.1*i);
 ctx.lineWidth = 2;
@@ -288,25 +286,24 @@ ctx.lineTo(67, 605-1.1*i);
 ctx.stroke();
 }
 for(i=0; i<18; i++){
-ctx.font = "15px Roboto";
+ctx.font = "15px Antic Slab";
 ctx.fillStyle = "#ffffff";
 ctx.fillText(i, i*30+63, 450);
 ctx.lineWidth = 2;
 ctx.strokeStyle = "#ffffff";
 ctx.beginPath();
-ctx.moveTo(i*30+67, 605-1.1*(data[i]/1000000));
-ctx.lineTo((i+1)*30+68, 605-1.1*(data[i+1]/1000000));
+ctx.moveTo(i*30+67, 605-1.1*(data[i]));
+ctx.lineTo((i+1)*30+68, 605-1.1*(data[i+1]));
 ctx.stroke();
 }
 
-ctx.font = "25px Roboto";
+ctx.font = "25px Antic Slab";
 ctx.fillStyle = "#ffffff"
-ctx.fillText("World Average Material Footprint", 0, 20);
-ctx.font = "20px Roboto";
+ctx.fillText("Poverty", 0, 45);
+ctx.font = "20px Antic Slab";
 ctx.fillStyle = "#FFD9B1";
-ctx.fillText("All Raw Materials", 0, 55);
 ctx.fillText("Percent increase (2000-2017): 66.2%", 0, 540);
-ctx.font = "18px Roboto";
+ctx.font = "18px Antic Slabs";
 ctx.fillText("Year (since 2000)", 260, 485);
 
 ctx.strokeStyle = "#FFD6AA";
@@ -323,10 +320,6 @@ ctx.stroke();
 ctx.translate(-227, 400);
 ctx.rotate(-Math.PI / 2);
 ctx.fillText("Resource Footprint (million tonnes)", 0, 240);
-
-
-
-//https://www.sdg.org/datasets/ed6ee35ad584405b8f3ef2abc22f6948_0
 
 
 
