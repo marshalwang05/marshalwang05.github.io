@@ -47,7 +47,7 @@ const gaugeUnit = gaugeWidth / questionTime;
 var TIMER;
 var score = 0;
 
-// render a question
+// ask a question
 function renderQuestion(){
     var q = questions[runningQuestion];
     
@@ -148,7 +148,7 @@ function scoreRender(){
               "img/1.png";
 
     if (scorePerCent>=80) {
-
+      
     }
     
     scoreDiv.innerHTML = "<img src="+ img +">";
@@ -306,7 +306,7 @@ ctx.font = "20px Antic Slab";
 ctx.fillStyle = "#FFD9B1";
 ctx.fillText("Percent increase (2000-2017): 66.2%", 0, 540);
 ctx.font = "18px Antic Slabs";
-ctx.fillText("Year (since 2000)", 260, 485);
+ctx.fillText("Year from 2000 to 2017", 260, 485);
 
 ctx.strokeStyle = "#FFD6AA";
 ctx.lineWidth = 2;
@@ -321,7 +321,7 @@ ctx.stroke();
 
 ctx.translate(-227, 400);
 ctx.rotate(-Math.PI / 2);
-ctx.fillText("Resource Footprint (million tonnes)", 0, 240);
+ctx.fillText("Number of people in poverty (millions)", 0, 240);
 
 
 

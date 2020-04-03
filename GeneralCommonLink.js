@@ -1,166 +1,3 @@
-const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
-const qImg = document.getElementById("qImg");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const counter = document.getElementById("counter");
-const timeGauge = document.getElementById("timeGauge");
-const progress = document.getElementById("progress");
-const scoreDiv = document.getElementById("scoreContainer");
-
-// create our questions
-var questions = [
-    {
-        question : "What is the world poverty line?",
-        imgSrc : "PovertyMap.jpg",
-        choiceA : "$1.90",
-        choiceB : "$1.80",
-        choiceC : "$1.70",
-        correct : "A"
-    },{
-        question : "Which country has the most people in poverty?",
-        imgSrc : "PiChart.jpg",
-        choiceA : "Cambodia",
-        choiceB : "Nigeria",
-        choiceC : "Philippines",
-        correct : "B"
-    },{
-        question : "Where does poverty not exist?",
-        imgSrc : "img/js.png",
-        choiceA : "Canada",
-        choiceB : "USA",
-        choiceC : "Nowhere",
-        correct : "C"
-    }
-];
-
-// create some variables
-
-const lastQuestion = questions.length - 1;
-var runningQuestion = 0;
-var count = 0;
-const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
-var TIMER;
-var score = 0;
-
-// render a question
-function renderQuestion(){
-    var q = questions[runningQuestion];
-    
-    question.innerHTML = "<p>"+ q.question +"</p>";
-    qImg.innerHTML = "<img src="+ q.imgSrc +">";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-}
-
-start.addEventListener("click",startQuiz);
-
-// start quiz
-function startQuiz(){
-    start.style.display = "none";
-    renderQuestion();
-    quiz.style.display = "block";
-    renderProgress();
-    renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
-}
-
-// render progress
-function renderProgress(){
-    for(var qIndex = 0; qIndex <= lastQuestion; qIndex++){
-        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
-    }
-}
-
-// counter render
-
-function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
-        count++
-    }else{
-        count = 0;
-        // change progress color to red
-        answerIsWrong();
-        if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
-        }else{
-            // end the quiz and show the score
-            clearInterval(TIMER);
-            scoreRender();
-        }
-    }
-}
-
-// checkAnwer
-
-function checkAnswer(answer){
-    if( answer == questions[runningQuestion].correct){
-        // answer is correct
-        score++;
-        // change progress color to green
-        answerIsCorrect();
-    }else{
-        // answer is wrong
-        // change progress color to red
-        answerIsWrong();
-    }
-    count = 0;
-    if(runningQuestion < lastQuestion){
-        runningQuestion++;
-        renderQuestion();
-    }else{
-        // end the quiz and show the score
-        clearInterval(TIMER);
-        scoreRender();
-    }
-}
-
-// answer is correct
-function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
-}
-
-// answer is Wrong
-function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
-}
-
-// score render
-function scoreRender(){
-    scoreDiv.style.display = "block";
-    
-    // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
-    
-    // choose the image based on the scorePerCent
-    var img = (scorePerCent >= 80) ? ".png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
-
-    if (scorePerCent>=80) {
-
-    }
-    
-    scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
-}
-
-//Next Page Button
-
-
-
-
-
 
 // Back to Top Button
 
@@ -234,44 +71,9 @@ function readMore3() {
     moreText.style.display = "inline";
   }
 }
-//Slideshow
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 
 
-
-
-
-
-//graph
-
+//https://www.sdg.org/datasets/ed6ee35ad584405b8f3ef2abc22f6948_0
 data = [369.7, 367.1, 361.6, 320.2, 300.4, 290.4, 280.1, 276, 255, 247.7, 210.9, 190.3, 185.8, 178.7, 160.2, 161.9, 158.8, 153.3]
 
 var canvas = document.getElementById("ctx");
@@ -301,12 +103,12 @@ ctx.stroke();
 
 ctx.font = "25px Antic Slab";
 ctx.fillStyle = "#ffffff"
-ctx.fillText("Poverty", 0, 45);
+ctx.fillText("Poverty in Sustainable Cities", 0, 45);
 ctx.font = "20px Antic Slab";
 ctx.fillStyle = "#FFD9B1";
 ctx.fillText("Percent increase (2000-2017): 66.2%", 0, 540);
 ctx.font = "18px Antic Slabs";
-ctx.fillText("Year (since 2000)", 260, 485);
+ctx.fillText("Year from 2000 to 2017", 260, 485);
 
 ctx.strokeStyle = "#FFD6AA";
 ctx.lineWidth = 2;
@@ -321,12 +123,7 @@ ctx.stroke();
 
 ctx.translate(-227, 400);
 ctx.rotate(-Math.PI / 2);
-ctx.fillText("Resource Footprint (million tonnes)", 0, 240);
-
-
-
-//https://www.sdg.org/datasets/ed6ee35ad584405b8f3ef2abc22f6948_0
-
+ctx.fillText("Number of people in poverty (millions)", 0, 240);
 
 
 //Collapsible

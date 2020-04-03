@@ -14,24 +14,24 @@ const scoreDiv = document.getElementById("scoreContainer");
 var questions = [
     {
         question : "Which one is NOT an example of a Sustainable City",
-        imgSrc : "PovertyMap.jpg",
+        imgSrc : "https://lh3.googleusercontent.com/proxy/Jax5x8cEslyMnzu5JJE7qlWvA4RacCBpMKqyqNiAG_lq_xYCkRijIw10vXMaW7r7fZVhjTqbSUxbgDHejiJfDiWaar4k0P8LpJlt5x_HGgZV1f5zfpGRfRtU0XzJTsAUOev-",
         choiceA : "Salzburg, Austria",
         choiceB : "San Francisco, USA",
         choiceC : "Copenhagen, Denmark",
         correct : "A"
     },{
         question : "Which of the following is something found in sustainable cities",
-        imgSrc : "PiChart.jpg",
+        imgSrc : "https://www.etcourse.com/sites/default/files/inline-images/Eco-friendly-industry-concept.jpg",
         choiceA : "Lower poverty rate",
         choiceB : "Decreased emissions produced",
-        choiceC : "",
+        choiceC : "Higher average pays",
         correct : "B"
     },{
-        question : "?",
-        imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        question : "Where are sustainable cities found?",
+        imgSrc : "https://upload.wikimedia.org/wikipedia/commons/9/91/Winkel_triple_projection_SW.jpg",
+        choiceA : "Only in Canada",
+        choiceB : "Nowhere",
+        choiceC : "Anywhere in the world",
         correct : "C"
     }
 ];
@@ -268,58 +268,6 @@ function showSlides(n) {
 
 
 
-
-//https://www.sdg.org/datasets/ed6ee35ad584405b8f3ef2abc22f6948_0
-data = [369.7, 367.1, 361.6, 320.2, 300.4, 290.4, 280.1, 276, 255, 247.7, 210.9, 190.3, 185.8, 178.7, 160.2, 161.9, 158.8, 153.3]
-
-var canvas = document.getElementById("ctx");
-var ctx = canvas.getContext("2d");
-for(i=200; i<460; i=i+50){
-ctx.font = "15px Antic Slab";
-ctx.fillStyle = "#ffffff";
-ctx.fillText(i, 33, 610-1.1*i);
-ctx.lineWidth = 2;
-ctx.strokeStyle = "#EF8D26";
-ctx.beginPath();
-ctx.moveTo(580, 605-1.1*i);
-ctx.lineTo(67, 605-1.1*i);
-ctx.stroke();
-}
-for(i=0; i<18; i++){
-ctx.font = "15px Antic Slab";
-ctx.fillStyle = "#ffffff";
-ctx.fillText(i, i*30+63, 450);
-ctx.lineWidth = 2;
-ctx.strokeStyle = "#ffffff";
-ctx.beginPath();
-ctx.moveTo(i*30+67, 605-1.1*(data[i]));
-ctx.lineTo((i+1)*30+68, 605-1.1*(data[i+1]));
-ctx.stroke();
-}
-
-ctx.font = "25px Antic Slab";
-ctx.fillStyle = "#ffffff"
-ctx.fillText("Poverty", 0, 45);
-ctx.font = "20px Antic Slab";
-ctx.fillStyle = "#FFD9B1";
-ctx.fillText("Percent increase (2000-2017): 66.2%", 0, 540);
-ctx.font = "18px Antic Slabs";
-ctx.fillText("Year (since 2000)", 260, 485);
-
-ctx.strokeStyle = "#FFD6AA";
-ctx.lineWidth = 2;
-ctx.beginPath();
-ctx.moveTo(67, 430);
-ctx.lineTo(67, 80);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(587, 430);
-ctx.lineTo(67, 430);
-ctx.stroke();
-
-ctx.translate(-227, 400);
-ctx.rotate(-Math.PI / 2);
-ctx.fillText("Resource Footprint (million tonnes)", 0, 240);
 
 
 
